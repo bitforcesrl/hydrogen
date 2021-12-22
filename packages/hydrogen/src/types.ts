@@ -13,7 +13,7 @@ export type Renderer = (
   }
 ) => Promise<
   {
-    body: string;
+    body: string | Response;
     componentResponse: ServerComponentResponse;
   } & Record<string, any>
 >;
